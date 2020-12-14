@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { ElementsModule } from './elements/elements.module';
-import {CollectionsModule} from './collections/collections.module';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -13,8 +13,7 @@ import {CollectionsModule} from './collections/collections.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ElementsModule,
-    CollectionsModule
+    ElementsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
