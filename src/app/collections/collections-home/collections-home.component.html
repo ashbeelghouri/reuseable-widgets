@@ -2,19 +2,11 @@
 <app-table [data]="data" [headers]="headers" class="striped celled"></app-table>
 <br/>
 <app-devider>Tab Menu</app-devider>
-<div class="ui grid">
-    <div class="four wide column">
-        <div class="ui vertical fluid tabular menu">
-            <a class="item" [routerLink]="['./']"
+
+<app-tabs>
+    <a class="item" [routerLink]="['./']"
                 [routerLinkActiveOptions] = "{ exact: true }"
             routerLinkActive="active">Biography</a>
             <a class="item" [routerLink]="['./', 'partners']" routerLinkActive="active">Partners</a>
             <a class="item" [routerLink]="['./', 'companies']" routerLinkActive="active">Companies</a>
-        </div>
-    </div>
-    <div class="twelve wide streched column">
-        <div class="ui segment">
-            <router-outlet></router-outlet>
-        </div>
-    </div>
-</div>
+</app-tabs>
